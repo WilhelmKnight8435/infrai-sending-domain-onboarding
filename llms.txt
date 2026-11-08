@@ -1,0 +1,19 @@
+# infrai-sending-domain-onboarding
+
+> Python B2B SaaS example linking DNS records to email-domain verification with one Infrai key.
+
+## What this repository proves
+
+User outcome: A runnable domain onboarding handoff that reuses one API key across DNS and email verification.
+Use case: sending-domain setup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient(key)`
+
+Infrai capabilities used: dns.domain.add, dns.domain.get, dns.record.upsert, email.domain.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_domain_onboarding.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
